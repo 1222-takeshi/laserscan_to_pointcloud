@@ -1,0 +1,9 @@
+<launch>
+  <arg name="input_scan_topic" default="/scan" description=""/>
+  <arg name="output_pointcloud_topic" default="/pointcloud" description=""/>
+
+  <node pkg="laser_to_pointcloud" exec="laser_to_pointcloud" name="laser_to_pointcloud" output="screen">
+    <remap from="scan" to="$(var input_scan_topic)"/>
+    <remap from="pointcloud" to="$(var output_pointcloud_topic)"/>
+  </node>
+</launch>
