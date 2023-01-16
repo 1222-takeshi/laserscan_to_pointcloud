@@ -6,7 +6,7 @@ This package can convert /scan (sensor_msgs::msg::LaserScan) to /pointcloud (sen
 ## Performed environment
 Ubuntu 22.04 / ROS 2 Humble
 
-## Test
+## How to Run
 ``` sh
 ros2 launch laser_to_pointcloud laser_to_pointcloud_launch.xml
 ```
